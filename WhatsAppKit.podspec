@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "WhatsAppKit"
   s.version      = "1.0.0"
-  s.summary      = "Unofficial wrapper to quickly send messages with WhatsApp for iPhone"
+  s.summary      = "Unofficial wrapper to quickly send messages with WhatsApp for iPhone."
   s.homepage     = "https://github.com/fawkeswei/WhatsAppKit"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Fawkes Wei" => "fawkeswei@gmail.com" }
