@@ -25,7 +25,7 @@ See `WhatsAppKit.h` for more convenience methods.
 Two ways to install
 
 1. Drag `WhatsAppKit/` folder to your project.
-2. Use [Cocoapods](https://github.com/CocoaPods/CocoaPods)
+2. Use [CocoaPods](https://github.com/CocoaPods/CocoaPods)
 
 #License
 
