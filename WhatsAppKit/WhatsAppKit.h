@@ -14,7 +14,5 @@
 
 + (void)launchWhatsApp;
 + (void)launchWhatsAppWithMessage:(NSString *)message;
-+ (void)launchWhatsAppWithAddressBookId:(int)addressBookId;
-+ (void)launchWhatsAppWithAddressBookId:(int)addressBookId andMessage:(NSString *)message;
 
 @end

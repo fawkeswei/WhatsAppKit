@@ -9,12 +9,12 @@
 #import "WhatsAppKit.h"
 #import "NSString+WhatsAppKit.h"
 
-#define kCONST_PREFIX @"whatsapp://"
+NSString * const WhatsAppURLScheme = @"whatsapp://?";
 
 @implementation WhatsAppKit
 
 + (BOOL)isWhatsAppInstalled {
-    return [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:kCONST_PREFIX]];
+    return [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:WhatsAppURLScheme]];
 }
 
 + (void)launchWhatsApp {
@@ -22,19 +22,7 @@
 }
 
 + (void)launchWhatsAppWithMessage:(NSString *)message {
-    [WhatsAppKit launchWhatsAppWithAddressBookId:-1 andMessage:message];
-}
-
-+ (void)launchWhatsAppWithAddressBookId:(int)addressBookId {
-    [WhatsAppKit launchWhatsAppWithAddressBookId:addressBookId andMessage:nil];
-}
-
-+ (void)launchWhatsAppWithAddressBookId:(int)addressBookId andMessage:(NSString *)message {
-    NSMutableString *urlString = [NSMutableString stringWithFormat:@"%@send?", kCONST_PREFIX];
-    
-    if (addressBookId > 0) {
-        [urlString appendFormat:@"abid=%d&", addressBookId];
-    }
+    NSMutableString *urlString = [NSMutableString stringWithFormat:@"%@send?", WhatsAppURLScheme];
     
     if ([message length] != 0) {
         [urlString appendFormat:@"text=%@&", [message urlEncode]];
