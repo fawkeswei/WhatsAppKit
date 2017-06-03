@@ -1,11 +1,11 @@
-#WhatsAppKit
+#WhatsAppKit [![Build Status](https://travis-ci.org/fawkeswei/WhatsAppKit.svg?branch=master)](https://travis-ci.org/fawkeswei/WhatsAppKit) [![CocoaPods](https://img.shields.io/cocoapods/v/WhatsAppKit.svg)](https://img.shields.io/cocoapods/v/WhatsAppKit.svg) [![CocoaPods Downloads](https://img.shields.io/cocoapods/dt/WhatsAppKit.svg)](https://img.shields.io/cocoapods/dt/WhatsAppKit.svg) [![Platform](https://img.shields.io/cocoapods/p/WhatsAppKit.svg?style=flat)](http://cocoadocs.org/docsets/WhatsAppKit) [![License](https://img.shields.io/cocoapods/l/WhatsAppKit.svg?style=flat)]()
 
 Launch WhatsApp for iPhone right from your app.
 
 Find WhatsApp for iPhone custom url scheme documentation [here](http://www.whatsapp.com/faq/en/iphone/23559013)
 
 
-#Usage
+# Usage
 
 Test if WhatsApp for iPhone is installed
 
@@ -20,18 +20,18 @@ Launch WhatsApp
 
 See `WhatsAppKit.h` for more convenience methods.
 
-#Install
+# Install
 
 Two ways to install
 
 1. Drag `WhatsAppKit/` folder to your project.
 2. Use [CocoaPods](https://github.com/CocoaPods/CocoaPods)
 
-#License
+# License
 
 The MIT License (MIT)
 
-Copyright (c) 2013 Fawkes Wei
+Copyright (c) 2017 Fawkes Wei
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
